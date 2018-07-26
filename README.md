@@ -41,7 +41,7 @@ I selected three models for parameter fine-tuning: I tried SVM with several kern
 
 **4.	Conclusion**
 
-For promotional offers, use the Stochastic Gradient Boosted Tree model to predict churn and use profit curve framework to design promotions. Basic steps of designing the promotion include:
+For promotional offers, use the Gradient Boosted Tree model to predict churn and use profit curve framework to design promotions. Basic steps of designing the promotion include:
 1.	Normalize the confusion matrix of true positive, false, positive, false negative and true negative customer classifications to probability rates (aka, divide customer counts in each outcome by the total customer number).
 2.	Estimate the cost or benefit of each decision the classifier can take. For instance, what is the price of a false positive error (giving a rider a retention incentive and they still depart)? Or a false negative error (losing a customer because no incentive was offered)?
 3.	Once expected rates and cost/benefit information are in place, they can be used to create expected profits.
