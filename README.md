@@ -14,9 +14,9 @@ A ride-sharing company is interested in predicting rider retention. To help expl
 **2.	The Dataset**
 
 The training set contains 40,000 entries and 12 columns. The following columns need work:
-* The last_trip_date and signup_date columns are strings and have to be converted to datetime. Also, I need to create Boolean not_active column from these dates, which will be the target variable.
+* The `last_trip_date` and `signup_date` columns are strings and have to be converted to datetime. Also, I need to create Boolean `not_active` column from these dates, which will be the target variable.
 * There are 162 missing ratings by drivers, 6,528 missing ratings by riders, and 319 missing phone numbers. I decided to remove rows with missing phone numbers and impute ratings using the mode of all values.
-* There are two categorical features, city and phone. They need to be one hot encoded for some of the estimators.
+* There are two categorical features, `city` and `phone`. They need to be one hot encoded for some of the estimators.
 *	Numerical features will need to be standardized for some models using StandardScaler.
 
 The training set is imbalanced (62% of customers churn). I used AUC score as a performance metric to evaluate all classifiers and used StratifiedKFold cross-validation to make sure all classes were represented in the evaluation folds.
